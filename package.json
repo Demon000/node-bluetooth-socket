@@ -21,13 +21,10 @@
   "dependencies": {
     "bindings": "^1.5.0",
     "errno": "^1.0.0",
-    "nan": "^2.15.0"
-  },
-  "peerDependencies": {
-    "node-gyp": "7.x"
+    "nan": "^2.18.0"
   },
   "optionalDependencies": {
-    "node-gyp": "7.x"
+    "node-gyp": "^10.0.1"
   },
   "repository": {
     "type": "git",
