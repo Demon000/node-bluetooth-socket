@@ -1,6 +1,6 @@
 {
   "name": "@tanislav000/bluetooth-socket",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Node.JS Socket for communication with AF_BLUETOOTH sockets",
   "keywords": [
     "bluez",
