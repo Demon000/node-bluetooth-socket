@@ -15,9 +15,9 @@
     "build": "node-gyp configure build",
     "install": "node-gyp configure build"
   },
-  "author": "WaeCo <aaqqws@googlemail.com>",
+  "author": "Cosmin Tanislav <demonsingur@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/waeco/node-bluetooth-socket#readme",
+  "homepage": "https://github.com/Demon000/node-bluetooth-socket#readme",
   "dependencies": {
     "bindings": "^1.5.0",
     "errno": "^1.0.0",
@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/waeco/node-bluetooth-socket.git"
+    "url": "git://github.com/Demon000/node-bluetooth-socket.git"
   },
   "bugs": {
-    "url": "https://github.com/waeco/node-bluetooth-socket/issues"
+    "url": "https://github.com/Demon000/node-bluetooth-socket/issues"
   },
   "os": [
     "linux"
