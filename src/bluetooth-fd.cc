@@ -112,7 +112,7 @@ NAN_METHOD(BluetoothFd::New) {
 NAN_METHOD(BluetoothFd::Start) {
     Nan::HandleScope scope;
 
-    BluetoothFd* p = Nan::ObjectWrap::Unwrap<BluetoothFd>(info.Holder());
+    BluetoothFd* p = Nan::ObjectWrap::Unwrap<BluetoothFd>(info.This());
 
     p->start();
 
@@ -122,7 +122,7 @@ NAN_METHOD(BluetoothFd::Start) {
 NAN_METHOD(BluetoothFd::Stop) {
     Nan::HandleScope scope;
 
-    BluetoothFd* p = Nan::ObjectWrap::Unwrap<BluetoothFd>(info.Holder());
+    BluetoothFd* p = Nan::ObjectWrap::Unwrap<BluetoothFd>(info.This());
 
     p->stop();
 
@@ -130,7 +130,7 @@ NAN_METHOD(BluetoothFd::Stop) {
 }
 
 NAN_METHOD(BluetoothFd::Write) {
-    BluetoothFd* p = Nan::ObjectWrap::Unwrap<BluetoothFd>(info.Holder());
+    BluetoothFd* p = Nan::ObjectWrap::Unwrap<BluetoothFd>(info.This());
 
     if (info.Length() > 0) {
         Local<Value> arg0 = info[0];
@@ -151,7 +151,7 @@ NAN_METHOD(BluetoothFd::Write) {
 }
 
 NAN_METHOD(BluetoothFd::Close) {
-    BluetoothFd* p = Nan::ObjectWrap::Unwrap<BluetoothFd>(info.Holder());
+    BluetoothFd* p = Nan::ObjectWrap::Unwrap<BluetoothFd>(info.This());
     if (!p->close_()) {
         return Nan::ThrowError(Nan::ErrnoException(errno));
     }
